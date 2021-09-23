@@ -1,0 +1,44 @@
+package com.company;
+
+public class StringAndConcat {
+    public static void main(String[] args) {
+        //string and string concatenation
+
+        // first concatenation method;
+        String noun = "Tilda is";
+        String age =" 25 years.";
+
+        System.out.println(noun + age);
+
+
+        //In the second concatenation, you create a new String to carry out the function and the result
+        //will be stored in the new String before printing. Eg
+        String newString = noun + age;
+        System.out.println(newString);
+
+        //string and primitive concatenation
+        String bookName = "All Things Beautiful: ";
+        //int chapter = 12;
+        //System.out.println(bookName + chapter);
+
+        int chapter = 10 ;
+        boolean isLong = false;
+        //System.out.println(""+ chapter + isLong);
+
+
+        //.concat() method
+        bookName.concat(chapter+"");
+        System.out.println(bookName.concat(chapter+""));
+
+
+
+"C:\Program Files\Java\jdk-11\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.2\lib\idea_rt.jar=61825:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Users\Ejiro Orajekwe\IdeaProjects\BasicJavaProject\out\production\BasicJavaProject" com.company.StringAndConcat
+Tilda is 25 years.
+Tilda is 25 years.
+All Things Beautiful: 10
+
+Process finished with exit code 0
+
+
+
+
