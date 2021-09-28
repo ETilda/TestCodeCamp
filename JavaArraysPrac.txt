@@ -1,0 +1,39 @@
+package com.company;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class JavaArrays {
+    public static void main(String[] args) {
+        int [] array1 = new int [5];
+        array1 [0] =10;
+        array1 [1] = 1;
+        array1 [4] = 1;
+        //System.out.println(Arrays.toString(array1));
+
+        String [] fruits = {"mango", "orange", "apple"};
+        System.out.println(Arrays.toString(fruits));
+
+        //two-dimensional
+        int [] [] doubleDimen = new int [2] [3];
+        doubleDimen [0] [0] =20;
+        doubleDimen [0] [1] =30;
+        //System.out.println(Arrays.deepToString(doubleDimen));
+        
+        //ArrayList
+       //ArrayList arr = new ArrayList();
+       //arr.add("test");
+      //arr.add(10);
+        // System.out.println(arr);
+
+        ArrayList<String> arr = new ArrayList<String>();
+        arr.add("test");
+        arr.add("10");
+        System.out.println(arr);
+
+
+
+
+
+    }
+}
