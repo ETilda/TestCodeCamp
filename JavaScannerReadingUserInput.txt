@@ -41,4 +41,5 @@ Task20
 
     }
 }
-
+JavaScannerReadingUserInput
+Scanner UserInput Task20
