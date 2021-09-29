@@ -1,0 +1,53 @@
+
+Package com.company;
+
+public class JavaLoops {
+    public static void main(String[] args) {
+        
+        //Task 21A Odd/Even
+        
+        
+        int number = 10;
+
+        for ( int i = 0; i <= 10; i ++ ) {
+            if (i % 2 == 0)
+                System.out.println("odd number");
+
+            else
+                System.out.println("even number");
+
+        }
+    }
+
+    }
+
+
+
+
+package com.company;
+
+public class JavaLoops {
+    public static void main(String[] args) {
+
+ //    // for incrementing
+ //      for(int i =0;i<10;i++){
+ //       System.out.println("student: "+ i);
+ //           }
+
+        //for decrementing
+        for(int i =10;i>5;i--){
+            System.out.println("student: "+ i);
+
+        }
+
+      //for decrementing
+        for(int i =10;i>=5;i--){
+            System.out.println("student: "+ i);
+
+    }
+
+              for each loop
+        String [] fruits = {"mango", "orange", "apple"};
+        for (String vName: fruits){
+            System.out.println(vName);
+        }
