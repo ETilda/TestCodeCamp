@@ -1,0 +1,112 @@
+
+package com.company;
+
+public class JavaMethods {
+    public static void main(String[] args) {
+        //To access the properties of a class we create an object of the class.
+        JavaMethods methodVar= new JavaMethods();
+        methodVar.printName();
+        methodVar.myAge();
+
+    }
+    public void printName (){
+        System.out.println("My name is Tilda.");
+    }
+     public void myAge (){
+         System.out.println("My age is twenty five (25).");
+     }
+}
+
+
+package com.company;
+
+public class JavaMethods {
+    public static void main(String[] args) {
+        //To access the properties of a class we create an object of the class.
+        JavaMethods methodVar= new JavaMethods();
+        methodVar.printName();
+        methodVar.myAge(23);
+
+    }
+    public void printName (){
+        System.out.println("My name is Tilda.");
+    }
+     public void myAge (int age){
+         System.out.println("My age is "+ age);
+     }
+}
+
+package com.company;
+
+public class JavaMethods {
+    public static void main(String[] args) {
+        //To access the properties of a class we create an object of the class.
+        JavaMethods methodVar= new JavaMethods();
+        methodVar.printName();
+        methodVar.myAge(23);
+        int userAge=methodVar.ageCalculation(1998, 2021);
+        System.out.println(userAge + " is the calculated age.");
+
+    }
+    public void printName (){
+        System.out.println("My name is Tilda.");
+    }
+     public void myAge (int age){
+         System.out.println("My age is "+ age);
+     }
+     //For age calculation
+    public int ageCalculation(int DOB, int presentYear){
+        int age= presentYear - DOB;
+        return age;
+
+
+
+JavaMethods
+Task 22.
+
+
+package com.company;
+import java.util.Scanner;
+
+
+public class JavaMethods {
+    public static void main(String[] args) {
+
+        JavaMethods methodVar= new JavaMethods();
+        methodVar.testifyNew();
+
+    }
+    public void testifyNew(){
+        Scanner verify = new Scanner(System.in);
+        String visitorInput ="";
+
+        while (true){
+            if ((!visitorInput.equalsIgnoreCase("Testify")) ){
+                System.out.println("Try again.");
+                visitorInput = verify.nextLine();
+
+                continue;
+            }else if (visitorInput.equalsIgnoreCase("Testify")){
+
+                System.out.println("Welcome, please enter password");
+
+                break;
+
+            }
+
+
+        }
+
+
+    }
+}
+
+
+
+
+
+
+
+
+    }
+}
