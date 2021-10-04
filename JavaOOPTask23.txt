@@ -1,0 +1,67 @@
+package introToOOP;
+
+public class Human_being {
+
+    String name;
+    int age;
+
+    public void aboutMe(String myName, int myAge){
+        name=myName;
+        age=myAge;
+
+        System.out.println(name + " "+ age);
+
+    }
+
+}
+package introToOOP;
+
+public class Girl {
+
+    public static void main(String[] args) {
+        Human_being lolaVariable=new Human_being();
+        lolaVariable.name="lola";
+        lolaVariable.age=19;
+
+        lolaVariable.aboutMe(lolaVariable.name,lolaVariable.age );
+    }
+
+}
+
+package introToOOP;
+
+public class ClassA {
+//  Task 22 on OOP. Create a class A, create a method that accepts
+//a String parameter "name" and returns the "name" value.
+    //Create an object of that class in another class  "B"
+//and SOUT the contents from the methods in class A    
+    String name;
+
+    public void classDetails(String courseName){
+
+        name=courseName;
+        System.out.println(name);
+
+    }
+
+}
+
+
+package introToOOP;
+
+public class ClassB {
+    public static void main(String[] args) {
+
+        ClassA courseVariable= new ClassA();
+        courseVariable.name= "javaOop22";
+
+        courseVariable.classDetails(courseVariable.name);
+
+    }
+}
+
+
+
+
+
+
